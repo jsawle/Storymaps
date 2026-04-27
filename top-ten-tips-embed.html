@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Top Ten Teaching Tips for National Geographic MapMaker</title>
+  
+  <!-- Open Graph for social sharing -->
+  <meta property="og:title" content="Top Ten Teaching Tips for National Geographic MapMaker">
+  <meta property="og:type" content="article">
+  
+  <style>
+    /* Minimal reset so the story sits flush */
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden; /* outer scroll handled by parent iframe */
+    }
+    
+    /* Story container fills the page */
+    .storymaps-root {
+      width: 100%;
+      height: 100vh;
+      min-height: 100vh;
+    }
+    
+    /* If you want to hide the story's built-in header bar
+       (the one showing story title, share, etc.), uncomment:
+    .esri-story-header,
+    [class*="story-header"] {
+      display: none !important;
+    }
+    */
+  </style>
+</head>
+<body>
+  <!-- Placeholder where the story will be rendered -->
+  <div class="storymaps-root"></div>
+  
+  <!-- Configuration object — must come BEFORE the embed script -->
+  <script>
+    window.storyMapsEmbedConfig = {
+      storyId: "5ab59de05b7e40b19e130d421be0b374",
+      rootSelector: ".storymaps-root",
+      topOffset: "0px"
+    };
+  </script>
+  
+  <!-- Engine script — loads the story into the placeholder -->
+  <script id="embed-script" src="https://storymaps.arcgis.com/embed/view"></script>
+</body>
+</html>
